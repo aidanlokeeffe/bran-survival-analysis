@@ -1,13 +1,12 @@
 # bran-survival-analysis
-This project is a second attempt to estimate the survival function of the brancher-annihilator process, a continuation of work done at the HWS 2021 REU under Dr. Hao.
-
-The purpose of this repository is to estimate the survival function of the brancher-annihilator process, a particular stochastic cellular automaton (SCA) (also known as an interacting partical system) first introduced to me by Dr. Yan Hao at Hobart and William Smith Colleges during their summer 2021 mathematics REU.
-
-With a partner (Jack Reever), I developed simulations of this SCA in Python. We were able to produce some preliminary visualizations, but we did not succeed in analyzing the survival function of messages. After that summer, I took a theoretical approach to the problem, which was able to generate some minor insights into the structure of the SCA, but not enough to calculate the survival function.
-
-This time, I am taking a statistical approach; furthermore, I plan to do a much better job of keeping this respository organized, so that if anyone wants/needs to follow my thought process (perhaps future REU students at HWS), they will have a better understanding of my thought process. The plan is to use survival analysis to estimate the survivor function, and use various local and global network parameters as explanatory variables. 
-
-In the event that I find something interesting, I also plan to write an article from this work, submit it for publication, and then share it with Dr. Hao and her collaborators. This write up will also be useful for anyone who wants to see my work, although it will likely be in a more academic than data-analytic style. To fill that gap, I may also produce a brief write up in the latter style.
-
-2023-01-06 Update
-I have added a folder called catch-up-note. The purpose of this folder is to hold notes and, ultimately, a write up of previous attempts. This is because my original mentor for this project has been out of the loop for a while now, and I want to write something to get her caught up.
+The purpose of this repository is to once and for all complete a research project in network science that began in the summer of 2021. The intended audience consists of two groups: 
+  1) Potential employers who want to see statistics and programming skills demonstrated in data science, and
+  2) Mathematicians (especially my former collaborators) who want to understand and replicate my analysis.
+ 
+Skills that will ultimately be showcased in this project are:
+  1) Experience with Python libraries used in data science, namely numpy and scikit.learn,
+  2) A foundational understanding of network science and the techniques of this field, including simulation,
+  3) Experience with survival analysis,
+  4) Research skills.
+  
+The goal is to understand how network structure influence the survival time of messages injected into a network under the influence of a certain interacting particle system. I will consider this respoitory presentable once I have built out the simulations to answer this question, and I will consider it complete when I have written an article on this topic and submitted it for publication.

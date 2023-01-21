@@ -1,12 +1,21 @@
 # bran-survival-analysis
-The purpose of this repository is to once and for all complete a research project in network science that began in the summer of 2021. The intended audience consists of two groups: 
-  1) Potential employers who want to see statistics and programming skills demonstrated in data science, and
-  2) Mathematicians (especially my former collaborators) who want to understand and replicate my analysis.
- 
-Skills that will ultimately be showcased in this project are:
+This project uses a statistical approach to solve a problem in mathematics. 
+
+To give a short description of the problem, we have a directed network, and every second, three rules are applied:
+  1) Every message already on the network sends a copy of itself to all available neighbors of their current node,
+  2) Some number of additional messages are injected into the network, and
+  3) Any messages sent/injected to the same node collide, and those copies are deleted from the network.
+
+This project seeks to use survival analysis to understand how the structure of the network affects the number of seconds that pass until all copies of a particular message are deleted.
+
+The intended audience of this project is twofold:
+  1) Employers who want to see a demonstration of skills relevant to data science, and 
+  2) Mathematicians, especially my former collaborators, who may want to understand this work.
+
+This is a challenging project, and when it is complete, is will demonstrate several skills:
   1) Experience with Python libraries used in data science, namely numpy and scikit.learn,
-  2) A foundational understanding of network science and the techniques of this field, including simulation,
-  3) Experience with survival analysis,
-  4) Research skills.
-  
-The goal is to understand how network structure influence the survival time of messages injected into a network under the influence of a certain interacting particle system. I will consider this respoitory presentable once I have built out the simulations to answer this question, and I will consider it complete when I have written an article on this topic and submitted it for publication.
+  2) The ability to handle network data,
+  3) Study design and the generation of synthetic data,
+  3) Survival analysis,
+  4) Research skills, and
+  5) Persistence, in that I have continually come back to this project despite getting stuck many times.

@@ -1,0 +1,9 @@
+I want to have a notebook that extracts network features from the small networks and 
+write them to a file. Two sets of features, global and local features. Each type of feature
+will have its own file. They need to be in the same order as the small networks.
+
+Then, I want a notebook that carries out the simulations to produce the survival data. This 
+should conform to your current iteration of the alphabet, your considerations about avoiding
+message competition, etc.
+
+Finally, I want a notebook that carries out the survival analysis.

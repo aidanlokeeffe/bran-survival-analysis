@@ -1,0 +1,7 @@
+AGENDA
+
+Last updated: 1/21/2023
+
+* Finish chapter 3 of the survival analysis book
+* Produce the formula for the survival time in terms of the stationary distribution
+* Get the prototype iteration of the experiment done and see what there is to see

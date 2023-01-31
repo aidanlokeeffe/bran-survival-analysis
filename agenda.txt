@@ -2,6 +2,22 @@ AGENDA
 
 Last updated: 1/21/2023
 
-* Finish chapter 3 of the survival analysis book
 * Produce the formula for the survival time in terms of the stationary distribution
+
+* Write about the DFA approach and the limiting argument that led you to ignore it
+
+* Write about survey into interating particle systems:
+OUTLINE
+- The interacting particle system most similar to information spreading (IS) is BARW. 
+- Specifically, information spreading is like BARW with an extremely high branching rate
+- There are two key differences. 
+    First, in BARW, not every message needs to branch at once, whereas in IS, all messages branch at the same time. This would change the probability of collisions, although it's not intuitive if this would increase or decrease the expected extinction time because the collision function is non-monotone. 
+    Second, in BARW, messages are not introduced into the network as time goes on. Usually, in those studies, they place one particle in the network, allow it to branch and branch, and then ask if that one message ever goes extinct. In IS, messages are introduced into the network at every time step. This makes IS different from other interacting particle systems. Potential terms for this slightly different system include "driven interacting particle system", "interacting particle system with source", something like that. 
+- Analytical methods have been applied to provide bounds for the expected extinction time of BARW on networks, but only very simple networks. The earilest studies were concerned with BARW on path graphs. Other studies have treated complete graphs and k-regular graphs. Moreover, the case of directed graphs has not been treated much at all.
+- I wanted to study the behavior of IS on family of directed random graphs. The simplest case is to examine directed Erdos-Renyi graphs. Also, the methods used to formally analyze BARW on even the simplest graphs are over my head, involving submartingales and other sophisticated techniques in stochastic processes. The difficulty in these simple cases motivates a statistical approach.
+
+* Intermediate period:
+- I had some personal things happen that distracted me from this project for a few months. After that, I for interested in understanding the preimages of the collision function. This was interesting to me, but it didn't lead anywhere, so I'm just remarking that it happened.
+- Around March, a friend of mine pointed me to a branch of statistics called survival analysis. I coded up a simulation to attempt to get survival curves. My attempt was naive, so I didn't get a result. After that, I went back to school for a while and had no time to work on this.
+
 * Get the prototype iteration of the experiment done and see what there is to see

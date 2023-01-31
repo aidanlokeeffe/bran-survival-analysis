@@ -6,7 +6,7 @@ To give a short description of the problem, we have a directed network, and ever
   2) Some number of additional messages are injected into the network, and
   3) Any messages sent/injected to the same node collide, and those copies are deleted from the network.
 
-This project seeks to use survival analysis to understand how the structure of the network affects the number of seconds that pass until all copies of a particular message are deleted.
+The goal of this project is to deliver a conjecture about what structural properties of a network influence the survival time of messages on that network, and to support this conjecture with statistical evidence. I believe that this can be achieved by applying a branch of statistics known as survival analysis.
 
 The intended audience of this project is twofold:
   1) Employers who want to see a demonstration of skills relevant to data science, and 

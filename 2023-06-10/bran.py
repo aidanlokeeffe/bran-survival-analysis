@@ -1,6 +1,7 @@
 import numpy as np
+import pandas as pd
 
-class BrAn(object):
+class BrancherAnnihilator(object):
     # Constructor
     def __init__(self, adjacency_matrix, injection_probability, num_messages):
         self.A = adjacency_matrix
@@ -12,7 +13,7 @@ class BrAn(object):
     def get_x0(self):
         return np.array( [np.random.choice([complex("0"),complex("1")]) for i in range(self.n)] )
     
-    # Injection vector whose L1 norm as a Binomial(n,p) distribution
+    # Injection vector whose L1 norm follows a Binomial(n,p) distribution
     def get_b(self):
         return np.array( [np.random.choice([complex("0"),complex("1")], p=[1-self.p, self.p]) for i in range(self.n)] )
     
@@ -56,6 +57,9 @@ class BrAn(object):
                 survival_times[alpha] += 1
             else:
                 need_injection = True
+        
+        survival_times = pd.DataFrame(survival_times.items())
+        survival_times.columns = ["MESSAGE_ID", "SURVIVAL_TIME"]
         
         return survival_times
 

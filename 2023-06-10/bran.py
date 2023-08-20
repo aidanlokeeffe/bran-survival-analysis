@@ -31,7 +31,7 @@ class BrancherAnnihilator(object):
     def simulate(self):
         # These are variables related to message tracking, not the dynamics per se
         survival_times = dict()
-        alpha = 0
+        alpha = -1
         need_injection = True
 
         # This will be the initial state x_0
